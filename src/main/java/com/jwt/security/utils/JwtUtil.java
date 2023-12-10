@@ -13,7 +13,7 @@ import java.util.function.Function;
 @Component
 public class JwtUtil {
     private static  final String SECRET_KEY = "TEST_12_APPLICATION" ;
-    private static final long TOKEN_VALIDITY = 36000;
+    private static final long TOKEN_VALIDITY = 360000;
 
     public String getUserNameFromToken(String jwtToken) {
         return getClaimsFromToken(jwtToken, Claims::getSubject);
